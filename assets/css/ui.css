@@ -8832,7 +8832,7 @@ a.nav__link {
       margin-top: 1.25rem; 
       margin-bottom: .75rem;
     }
-.megamenu__logo1{
+.right-logo{
   float: right;
 }
 @media (min-width: 900px) {
