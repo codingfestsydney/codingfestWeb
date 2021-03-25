@@ -8833,7 +8833,7 @@ a.nav__link {
       margin-bottom: .75rem;
     }
 .megamenu__logo{
-  float: right;
+  float: left;
 }
 @media (min-width: 900px) {
     .page-header__inner .header-tools__search {
