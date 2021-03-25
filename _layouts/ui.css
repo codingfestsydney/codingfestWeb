@@ -845,7 +845,7 @@ abbr[title] {
  */
 
 .max {
-  max-width: 63rem;
+  max-width: 123rem;
 
   /* account for padding */
   margin-right: auto;
