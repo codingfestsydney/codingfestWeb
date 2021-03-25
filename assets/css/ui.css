@@ -8766,7 +8766,9 @@ a.nav__link {
       padding-left: 1rem
   }
     }
-
+.right-title{
+  float: right;
+}
 .page-header--study .header-tools__menu {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
