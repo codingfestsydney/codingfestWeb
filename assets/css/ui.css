@@ -8887,6 +8887,10 @@ a.nav__link {
   color: rgb(255, 255, 255);
 }
 
+.page-title{
+  float:right
+}
+
 .page-title:visited {
     color: rgb(255, 255, 255);
   }
