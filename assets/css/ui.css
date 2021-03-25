@@ -8827,7 +8827,9 @@ a.nav__link {
       margin-top: 1.25rem;
       margin-bottom: .75rem;
     }
-
+.megamenu__logo{
+  float: right;
+}
 @media (min-width: 900px) {
     .page-header__inner .header-tools__search {
       display: block;
