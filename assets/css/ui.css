@@ -8766,6 +8766,9 @@ a.nav__link {
       padding-left: 1rem
   }
     }
+    .left-title{
+      float:left
+    }
 .right-title{
   float: right;
 }
