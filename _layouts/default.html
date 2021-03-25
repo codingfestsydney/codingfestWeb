@@ -6,12 +6,12 @@
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <link rel="icon" href="/assets/files/USydLogo.svg" type="image/gif" sizes="16x16">
+  <link rel="icon" href="/codingfestWeb/assets/files/USydLogo.svg" type="image/gif" sizes="16x16">
   <title>The CodingFest Sydney</title>
 
 
-  <link rel="stylesheet" href="/codingfest/assets/css/ui.css">
-  <link rel="stylesheet" href="/codingfest/assets/css/css">
+  <link rel="stylesheet" href="/codingfestWeb/assets/css/ui.css">
+  <link rel="stylesheet" href="/codingfestWeb/assets/css/css">
 
   <style>
     .page-header--campaign p.heading-card {
@@ -519,10 +519,10 @@
   <div id="ui">
     <div class="page-header page-header--l3 page-header--study page-header__with-top-menu">
       <div class="page-header__inner">
-        <div class="logo megamenu__logo"><a class="logo__link"><img alt="Coding Fest" src="/codingfest/assets/files/USydLogo.png"
+        <div class="logo megamenu__logo"><a class="logo__link"><img alt="Coding Fest" src="/codingfestWeb/assets/files/USydLogo.png"
               class="logo__image logo__image--md logo--no-padding-md"></a></div>
         <div class="page-title" style="width: 25%;">The University of Sydney</div>
-        <div class="logo megamenu__logo"><img alt="CodingFest homepage" src="/codingfest/assets/files/festlogo.png"
+        <div class="logo megamenu__logo"><img alt="CodingFest homepage" src="/codingfestWeb/assets/files/festlogo.png"
             class="logo__image logo__image--md logo--no-padding-md"></div>
         <div class="page-title" style="width: 25%;">Coding Fest</div>
         <div class="megamenu__blanket">
@@ -673,7 +673,7 @@
               <div><a 
                   class="btn-owner card  card--image  card--bdr bg-inverted">
                   <div role="img" aria-label="" class="card__thumb card__thumb--zoom"
-                    style="background-image: url(/codingfest/assets/files/winner.png);">
+                    style="background-image: url(/codingfestWeb/assets/files/winner.png);">
                   </div>
                   <div class="card__inner">
                     <div class="card__btn btn btn--inverted btn--fullwidth">See how participates showed their talents
@@ -690,7 +690,7 @@
           <h3 class="heading-lead shim-pb1">Call for Sponsors</h3>
           <div class="grid grid--3col">
             <div class="cell">
-              <div class="card card--generic"><a class="card__thumb" style="background-image: url(/codingfest/assets/files/au.png);"></a>
+              <div class="card card--generic"><a class="card__thumb" style="background-image: url(/codingfestWeb/assets/files/au.png);"></a>
                 <div class="card__inner">
                   <h3 class="card__header"><a class="card__title">Good Sponsor</a></h3>
                   <div class="card__excerpt">
@@ -718,7 +718,7 @@
             <div class="cell">
               <div class="card card--generic"><a
                   aria-label="Volunteer register for new trials to prevent Alzheimer’s disease" class="card__thumb"
-                  style="background-image: url(/codingfest/assets/files/ag.png);"></a>
+                  style="background-image: url(/codingfestWeb/assets/files/ag.png);"></a>
                 <div class="card__inner">
                   <h3 class="card__header"><a class="card__title">Silver Sponsor</a></h3>
                   <div class="card__excerpt">
@@ -743,7 +743,7 @@
               </div>
             </div>
             <div class="cell">
-              <div class="card card--generic"><a class="card__thumb" style="background-image: url(/codingfest/assets/files/cu.png);"></a>
+              <div class="card card--generic"><a class="card__thumb" style="background-image: url(/codingfestWeb/assets/files/cu.png);"></a>
                 <div class="card__inner">
                   <h3 class="card__header"><a class="card__title">Bronze Sponsor</a></h3>
                   <div class="card__excerpt">
@@ -781,31 +781,13 @@
       <div class="page-footer__top">
 
         <div class="page-footer__header-logo">
-          <div class="logo"><a class="logo__link"><img alt="UYSD Coding Fest" src="/codingfest/assets/files/USydLogo.svg"
+          <div class="logo"><a class="logo__link"><img alt="UYSD Coding Fest" src="/codingfestWeb/assets/files/USydLogo.svg"
                 class="logo__image logo__image--lg logo--no-padding-lg"></a></div>
         </div>
       </div>
       <!-- <div id="liveagent" class="liveagent"></div> -->
     </footer>
   </div>
-
- 
-  <script>mendeleyWebImporter = {
-      downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
-      open() { return this._call('open', []); },
-      _call(methodName, methodArgs) {
-        const id = Math.random();
-        window.postMessage({ id, token: '0.5400363301694038', methodName, methodArgs }, 'https://www.unimelb.edu.au');
-        return new Promise(resolve => {
-          const listener = window.addEventListener('message', event => {
-            const data = event.data;
-            if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
-            window.removeEventListener('message', listener);
-            resolve(data.result);
-          });
-        });
-      }
-    };</script>
 </body>
 
 </html>
