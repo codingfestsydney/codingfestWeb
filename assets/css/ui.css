@@ -8909,6 +8909,15 @@ a.nav__link {
     margin-bottom: .75rem;
   }
 
+  .page-title-right::before {
+    display: inline-block;
+    position: relative;
+    content: '';
+    width: 1.25rem;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: .75rem;
+  }
+
 .megamenu .page-title {
     padding: 1.111rem 0;
     width: auto !important;
