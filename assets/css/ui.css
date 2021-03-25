@@ -1725,7 +1725,7 @@ a[target='_blank']:not(.link-icon--disable)::after {
   }
 
   .page-header--study .page-header__inner {
-    min-height: 8rem !important;
+    min-height: 6rem !important;
   }
 
   .section--image-mask::before,
