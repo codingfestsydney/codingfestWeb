@@ -11220,7 +11220,12 @@ page-nav {
         -ms-flex-pack: distribute;
             justify-content: space-around;
   }
-
+.title-container{
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .18);
+}
 .heading-page,
 .heading-page-sub,
 .heading-section,
