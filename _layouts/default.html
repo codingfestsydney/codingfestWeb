@@ -7,6 +7,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <link rel="icon" href="/codingfestWeb/assets/files/festlogo.png" type="image/gif" sizes="16x16">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <title>The CodingFest Sydney</title>
 
 
@@ -488,11 +493,12 @@
     <main id="main">
       <div id="a3632473" role="img" aria-label="" class="page-header__darken--o25"
         style="background-image: url('/codingfestWeb/assets/files/usyd_background.jpeg');">
-        <div class="title-container" style="background-color: rgba(0, 0, 0, .25);height: 30vh;padding: 140px 0 380px 0;">
+        <div class="title-container"
+          style="background-color: rgba(0, 0, 0, .25);height: 30vh;padding: 140px 0 380px 0;">
           <h1 style="text-align: center;color: white;">Coding Fest 2021 (in hybrid mode) is open for applications!</h1>
           <h2 style="text-align: center;color: white;">Apply now to secure your chance to win one of the prizes (total
             value $2500)!
-          </h2> 
+          </h2>
           <div>
             <table style="margin-left:auto;margin-right:auto;">
               <tr>
@@ -616,9 +622,29 @@
             <div class="cell cell--desk-1of3">
               <div>
                 <img src="/codingfestWeb/assets/files/winner.png" height="350px"></img>
-                <dialog open>
-                  <p>Greetings, one and all!</p>
-                </dialog>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Launch demo modal
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        123
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <!-- <div role="img" aria-label="" class="1"
                     style="background-image: url(/codingfestWeb/assets/files/winner.png);"> -->
