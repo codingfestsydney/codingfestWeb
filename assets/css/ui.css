@@ -1,15 +1,5 @@
 
-.fade-enter-active,
-.fade-leave-active {
-  -webkit-transition: opacity 0.25s ease 0.125s;
-  transition: opacity 0.25s ease 0.125s;
-}
-.fade-enter,
-.fade-leave-to {
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -1241,21 +1231,6 @@ a[target='_blank']:not(.link-icon--disable)::after {
   overflow: hidden;
 }
 
-/**
- * Animations
- */
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-}
 
 @-webkit-keyframes slideFromRight {
   from {
@@ -8101,11 +8076,6 @@ a.nav__link {
     background-color: #e85134;
   }
 
-.megamenu .inner--fade {
-      -webkit-animation: fadeIn .5s backwards;
-              animation: fadeIn .5s backwards;
-    }
-
 .megamenu .inner.open {
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%);
@@ -9191,16 +9161,6 @@ page-nav {
     display: block;
   }
 
-.blanket.white {
-    display: block;
-    z-index: 99;
-    margin-top: 3.75rem;
-    -webkit-animation: fadeIn .2s backwards;
-            animation: fadeIn .2s backwards;
-    opacity: .95;
-    background-color: rgb(255, 255, 255);
-  }
-
 @media (min-width: 769px) {
 
 .blanket.white {
@@ -9266,17 +9226,6 @@ page-nav {
       text-decoration: none;
     }
 
-.page-header-search {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3.75rem;
-  -webkit-animation: fadeIn .2s backwards;
-          animation: fadeIn .2s backwards;
-  background: rgba(255, 255, 255, .95);
-}
 
 .page-header-search.active {
     display: block;
