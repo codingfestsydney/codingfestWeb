@@ -201,6 +201,7 @@
             border-bottom: 4px solid white;
             padding: 0 0 4px;
         }
+
         .navbar-custom {
             background-color: #e85134;
             font-family: Arial, Helvetica, sans-serif;
@@ -214,9 +215,13 @@
         .navbar-custom .navbar-text {
             color: black;
         }
-        .navc{
+
+        .navc {
             padding: 0;
             background-color: #e85134;
+        }
+        li{
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -225,13 +230,13 @@
     <div class="navc row">
         <div class="col-2"></div>
         <nav class="col navbar navbar-custom  navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="https://codingfestsydney.github.io/"> <img src='https://codingfestsydney.github.io/assets/files/festlogo.png'
-                    class="logo"></a>
+            <a class="navbar-brand" href="https://codingfestsydney.github.io/"> <img
+                    src='https://codingfestsydney.github.io/assets/files/festlogo.png' class="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
@@ -280,12 +285,15 @@
                             <th>
                                 PNR Lecture Theatre 1 (LT1)
                             </th>
-                            <th>Drawing Office 311, 315, 316
+                            <th>PNR Drawing Office 311, 315, 316
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-
+                        <tr>
+                            <td>08:00am – 09:30am</td>
+                            <td>Steup</td>
+                        </tr>
                         <tr>
                             <td>
                                 9:30am
@@ -301,31 +309,38 @@
                             <td>10:00am – 10:30am
                             </td>
                             <td>
-                                Project Showcase and Tutorial "Start Coding without Hesitation - Programming Languages Showdown" from Sydney Informatics Hub
+                                Tutorial<br>
+                                <i>Start Coding without Hesitation - Programming Languages Showdown</i> <br>
+                                Jianzhou Zhao, Anastasios Papaioannou (Sydney Informatics Hub)
                             </td>
-                            <td>Project Showcase
+                            <td>Project Showcase<br>
+                                <i>Refer to the list of Showcase Projects below.</i>
                             </td>
                         </tr>
                         <tr>
                             <td>10:30am – 11:00am
                             </td>
                             <td></td>
-                            <td>Project Showcase
+                            <td>Project Showcase<br>
+                                <i>Refer to the list of Showcase Projects below.</i>
+
                             </td>
                         </tr>
                         <tr>
                             <td>11:00am – 11:30am
                             </td>
-                            <td><i>Tech Talk</i><br>
-                                "Augmented Reality with HoloLens" from Microsoft</td>
+                            <td>Tech Talk 1<br>
+                                <i>Augmented Reality with HoloLens</i><br>Lawrence Crumpton (Microsoft)
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>11:30am – 12:00pm
                             </td>
                             <td>
-                                <i>Tech Talk</i><br>
-                                "So what's the deal with Cloud?" from Accenture
+                                Tech Talk 2<br>
+                                <i>So what's the deal with Cloud?</i>
+                                <br>Nicholas Tucker (Accenture)
                             </td>
                             <td>
 
@@ -353,7 +368,46 @@
                 </table>
             </div>
             <div class="col-2"></div>
+
         </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col" style="font-family: Arial, Helvetica, sans-serif;">
+                <h2>
+                    Showcase Projects
+                </h2>
+                <ol>
+                    <li>Similar Animal Faces Search Engine<br>Chenyue Hu, Yaxuan Cui, Jiuqi Li<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=chhu8917.pdf">Poster</a></li>
+                    <li>Astraea Spaceflight Simulation<br>Flynn Bryant, Han Ly<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=fbry0688.pdf">Poster</a><br><a href="https://uni-sydney.zoom.us/j/9050234601?pwd=QSthejdqWWRPWE5qck1WOCtGM2dsZz09">Zoom</a></li>
+                    <li>Resourcing Robot<br>Shubhi Goel, Zhihao Kang, Akhil Raju<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=gsab3354.pdf">Poster</a></li>
+                    <li>Change Detection in Remote Sensing Images with CycleGAN<br>Chengzhi Chen, Xinyao Tian, Xiaochen Tang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=gsab3354.pdf">Poster</a></li>
+                    <li>Classification with Label Noise<br>Huang Huan, Bin Bian, Tara Ghazanfari<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hhua9871.pdf">Poster</a></li>
+                    <li>Image Color Style Mimicking Filter Application<br>Minzhi Huang, Yuanheng Li, Haoyan Liu<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hliu2547.pdf">Poster</a></li>
+                    <li>Real-time Off-street Parking Recommendation System<br>John Liu, Wei Jun Poh, Kevin Lam, Nathan Chan<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hliu4507.pdf">Poster</a></li>
+                    <li>Neural Ordinary Differential Equation for Language Modelling<br>Hongbo Du, Yuhao Hu, Liam Watts<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hodu9417.pdf">Poster</a></li>
+                    <li>Revisiting Fundamentals of Model-Free Reinforcement Learning<br>Raja Grewal<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=jgre3244.pdf">Poster</a></li>
+                    <li>Pose Master – A Webcam Pose Matcher<br>Jiawei Sun<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=jsun4242.pdf">Poster</a></li>
+                    <li>Message Delivery<br>Longjun Dong<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ldon9799.pdf">Poster</a></li>
+                    <li>Fine-Grained Action Recognition<br>Linwei Tao<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ltao0358.pdf">Poster</a></li>
+                    <li>Phase-Free Neural Network for Character Motion Control<br>Lintao Wang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=lwan3720.pdf">Poster</a></li>
+                    <li>Interaction Dynamics of Foreign Exchange Transactions<br>Prasoon Dhoundiyal<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=pdho6793.pdf">Poster</a></li>
+                    <li>Spur & Helical Pinion Analyzer<br>Pallava Rayudu Kodali<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=pkod4671.pdf">Poster</a></li>
+                    <li>iPay – Custom Time & Attendance<br>Raveen Senanayake, Jack Purdon<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=rsen9823.pdf">Poster</a></li>
+                    <li>Technical Analysis for Stock Trading<br>Shehoi Yeung, Xiaoping Wang, Yuanyuan Sheng, Zilan Zhang, Yucheng Sun<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=syeu8305.pdf">Poster</a></li>
+                    <li>Autobeat<br>Tomas Lawton<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=tomaslawton.pdf">Poster</a></li>
+                    <li>Medusa<br>Jihua Mo, Lining Chen, Ruixiao Ding, Rockson Liu, Weichen Yuan<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=wyua7455.pdf">Poster</a></li>
+                    <li>Automated Sign Language Recognizion Via CNN<br>Maria Mandiola, Xinyao Tian<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=xtia8467.jpg">Poster</a></li>
+                    <li>Exploring the effects of melody tonality normalization on chord generation by deep learning<br>Chengxing Li and Yizhou Du<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yidu9628.pdf">Poster</a></li>
+                    <li>Noise-neuron Pruner<br>Yuhao Wu, Zhengning Wu<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yuwu4884.pdf">Poster</a></li>
+                    <li>Learning Particle-Based Multi-Object Interaction Scene Simulation With Graph Networks<br>Yihe Wang, Yisi Jin<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ywan3183.pdf">Poster</a></li>
+                    <li>Quantitative Model of Cryptocurrency<br>Yuxuan Zhou, Chao Li, Zhuohao Zhou, Qinyi Cao<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yzho3482.pdf">Poster</a></li>
+                    <li>Greatfirst<br>Yihu Chen, Zhimei Chen, Jinchi Zhu, Junxian Liang, Jinwei Zhang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=zche3338.pdf">Poster</a></li>
+                </ol>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    </div>
 
     </div>
     <!-- <div class="row banner footer">
@@ -366,18 +420,17 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous">
-        $('#linkmodal').on("click", function () {
-            $('#Modal').modal('show');
-        });
-    </script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+            $('#linkmodal').on("click", function () {
+                $('#Modal').modal('show');
+            });
+        </script>
 </body>
 
 </html>
