@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://codingfestsydney.github.io/assets/files/festlogo1.png" type="image/gif"
+        sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>Coding Fest @ The University of Sydney</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EP601YLQMM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EP601YLQMM');
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Serif', 'Georgia', 'Times New Roman', serif;
+
+            /* background-color: blue; */
+        }
+
+        .slogan-top {
+            color: black;
+            padding: 30px;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .slogan {
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            height: 50px;
+            margin: 10px;
+        }
+
+        .upper1 {
+            /* background-image:  */
+            background-image: url('https://codingfestsydney.github.io/assets/files/usyd_background.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 40%;
+            width: 100vw;
+            /* padding-bottom: 20px; */
+            padding-bottom: 0;
+
+        }
+
+        .mask {
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+
+        }
+
+        .app-button {
+            background-color: rgba(232, 81, 52, .85);
+            padding: 10px;
+            border: 2px solid white;
+            text-align: center;
+            width: 200px;
+            margin-top: 2vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .middle {
+            padding-top: 5%;
+            background-color: white;
+        }
+
+        .text-with-back {
+            background-color: #e85134;
+            color: white;
+        }
+
+        .banner {
+            background-color: #e85134;
+            height: 70px;
+        }
+
+        .card-border {
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-top: 0;
+            /* width: 150px; */
+            /* margin-top: 2vh; */
+        }
+
+        a a {
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        a:active {
+            color: white;
+        }
+
+
+        #linkmodal {
+            color: white;
+        }
+
+        #linmodal:visited {
+            color: white;
+
+        }
+
+        #linmodal:hover {
+            color: white;
+        }
+
+        #linmodal:active {
+            color: white;
+        }
+
+
+        .carousel-control-next-icon:after {
+            content: '>';
+            font-size: 55px;
+            color: black;
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 55px;
+            color: black;
+        }
+
+        .footer {
+            /* position: absolute; */
+            /* width: 100%; */
+            bottom: 0;
+            margin-top: 10%;
+        }
+
+        .timedatatable {
+            color: #e85134;
+            font-weight: bold;
+        }
+
+        .intextlink {
+            color: #e85134;
+        }
+
+        .intextlink:visited {
+            color: #e85134;
+        }
+
+        .intextlink:hover {
+            color: #e85134;
+        }
+
+        .intextlink:active {
+            color: #e85134;
+        }
+
+        .navitem {
+            padding-top: 25px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+
+        .navispan {
+            color: white;
+            margin-right: 5px;
+        }
+
+        tb {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        b.title {
+            border-bottom: 4px solid white;
+            padding: 0 0 4px;
+        }
+
+        .navbar-custom {
+            background-color: #e85134;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Modify brand and text color */
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: black;
+        }
+
+        .navc {
+            padding: 0;
+            background-color: #e85134;
+        }
+        li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <div class="navc row">
+        <div class="col-2"></div>
+        <nav class="col navbar navbar-custom  navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"> <img src='https://codingfestsydney.github.io/assets/files/festlogo.png'
+                    class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/call">Call
+                            for Paticipation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/program">Program</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="nav-brand">
+                <img src='https://codingfestsydney.github.io/assets/files/USydLogo.svg' class="logo">
+            </a>
+        </nav>
+        <div class="col-2"></div>
+    </div>
+</nav>
+    
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div style="padding-top: 50px; padding-bottom: 50px;">
+                    <h4 style="font-family:Arial, Helvetica, sans-serif">
+                        Coding Fest 2021 will be held in a hybrid mode at 10am-2pm on Wed 9th June in the <a
+                            class="intextlink" href=" http://sydney.edu.au/maps/campuses/?area=CAMDAR">PNR (Peter
+                            Nicol
+                            Russel)
+                            building</a> at the University of Sydney.
+
+
+                    </h4>
+                </div>
+                <table class="table" style="font-family: Arial, Helvetica, sans-serif;">
+                    <thead>
+
+                        <tr>
+                            <th>
+
+                            </th>
+                            <th>
+                                PNR Lecture Theatre 1 (LT1)
+                            </th>
+                            <th>PNR Drawing Office 311, 315, 316
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00am – 09:30am</td>
+                            <td>Steup</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                9:30am
+                            </td>
+                            <td>
+                                Check in
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00am – 10:30am
+                            </td>
+                            <td>
+                                Tutorial<br>
+                                <i>Start Coding without Hesitation - Programming Languages Showdown</i> <br>
+                                Jianzhou Zhao, Anastasios Papaioannou (Sydney Informatics Hub)
+                            </td>
+                            <td>Project Showcase<br>
+                                <i>Refer to the list of Showcase Projects below.</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30am – 11:00am
+                            </td>
+                            <td></td>
+                            <td>Project Showcase<br>
+                                <i>Refer to the list of Showcase Projects below.</i>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:00am – 11:30am
+                            </td>
+                            <td>Tech Talk 1<br>
+                                <i>Augmented Reality with HoloLens</i><br>Lawrence Crumpton (Microsoft)
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:30am – 12:00pm
+                            </td>
+                            <td>
+                                Tech Talk 2<br>
+                                <i>So what's the deal with Cloud?</i>
+                                <br>Nicholas Tucker (Accenture)
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:00pm – 12:30pm
+                            </td>
+                            <td>
+                                Award Presentation
+
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:30pm – 14:00pm
+                            </td>
+                            <td>Free Lunch and Networking
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col" style="font-family: Arial, Helvetica, sans-serif;">
+                <h2>
+                    Showcase Projects
+                </h2>
+                <ol>
+                    <li>Similar Animal Faces Search Engine<br>Chenyue Hu, Yaxuan Cui, Jiuqi Li<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=chhu8917.pdf">Poster</a></li>
+                    <li>Astraea Spaceflight Simulation<br>Flynn Bryant, Han Ly<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=fbry0688.pdf">Poster</a><br></li>
+                    <li>Resourcing Robot<br>Shubhi Goel, Zhihao Kang, Akhil Raju<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=gsab3354.pdf">Poster</a></li>
+                    <li>Change Detection in Remote Sensing Images with CycleGAN<br>Chengzhi Chen, Xinyao Tian, Xiaochen Tang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=gsab3354.pdf">Poster</a></li>
+                    <li>Classification with Label Noise<br>Huang Huan, Bin Bian, Tara Ghazanfari<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hhua9871.pdf">Poster</a></li>
+                    <li>Image Color Style Mimicking Filter Application<br>Minzhi Huang, Yuanheng Li, Haoyan Liu<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hliu2547.pdf">Poster</a></li>
+                    <li>Real-time Off-street Parking Recommendation System<br>John Liu, Wei Jun Poh, Kevin Lam, Nathan Chan<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hliu4507.pdf">Poster</a></li>
+                    <li>Neural Ordinary Differential Equation for Language Modelling<br>Hongbo Du, Yuhao Hu, Liam Watts<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=hodu9417.pdf">Poster</a></li>
+                    <li>Revisiting Fundamentals of Model-Free Reinforcement Learning<br>Raja Grewal<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=jgre3244.pdf">Poster</a></li>
+                    <li>Pose Master – A Webcam Pose Matcher<br>Jiawei Sun<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=jsun4242.pdf">Poster</a></li>
+                    <li>Message Delivery<br>Longjun Dong<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ldon9799.pdf">Poster</a></li>
+                    <li>Fine-Grained Action Recognition<br>Linwei Tao<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ltao0358.pdf">Poster</a></li>
+                    <li>Phase-Free Neural Network for Character Motion Control<br>Lintao Wang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=lwan3720.pdf">Poster</a></li>
+                    <li>Interaction Dynamics of Foreign Exchange Transactions<br>Prasoon Dhoundiyal<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=pdho6793.pdf">Poster</a></li>
+                    <li>Spur & Helical Pinion Analyzer<br>Pallava Rayudu Kodali<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=pkod4671.pdf">Poster</a></li>
+                    <li>iPay – Custom Time & Attendance<br>Raveen Senanayake, Jack Purdon<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=rsen9823.pdf">Poster</a></li>
+                    <li>Technical Analysis for Stock Trading<br>Shehoi Yeung, Xiaoping Wang, Yuanyuan Sheng, Zilan Zhang, Yucheng Sun<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=syeu8305.pdf">Poster</a></li>
+                    <li>Autobeat<br>Tomas Lawton<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=tomaslawton.pdf">Poster</a></li>
+                    <li>Medusa<br>Jihua Mo, Lining Chen, Ruixiao Ding, Rockson Liu, Weichen Yuan<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=wyua7455.pdf">Poster</a></li>
+                    <li>Automated Sign Language Recognizion Via CNN<br>Maria Mandiola, Xinyao Tian<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=xtia8467.jpg">Poster</a></li>
+                    <li>Exploring the effects of melody tonality normalization on chord generation by deep learning<br>Chengxing Li and Yizhou Du<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yidu9628.pdf">Poster</a></li>
+                    <li>Noise-neuron Pruner<br>Yuhao Wu, Zhengning Wu<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yuwu4884.pdf">Poster</a></li>
+                    <li>Learning Particle-Based Multi-Object Interaction Scene Simulation With Graph Networks<br>Yihe Wang, Yisi Jin<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=ywan3183.pdf">Poster</a></li>
+                    <li>Quantitative Model of Cryptocurrency<br>Yuxuan Zhou, Chao Li, Zhuohao Zhou, Qinyi Cao<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=yzho3482.pdf">Poster</a></li>
+                    <li>Greatfirst<br>Yihu Chen, Zhimei Chen, Jinchi Zhu, Junxian Liang, Jinwei Zhang<br><a href="https://www.dropbox.com/sh/rxao8e3pp03caxq/AADBq-kELZmRXRxExs0Jy8jMa?dl=0&preview=zche3338.pdf">Poster</a></li>
+                </ol>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <!-- <div class="row banner footer">
+        <div class="col-2"></div>
+        <div class="col">
+            <img src="https://codingfestsydney.github.io/assets/files/USydLogo.svg" class="logo"></img>
+        </div>
+    </div> -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+            $('#linkmodal').on("click", function () {
+                $('#Modal').modal('show');
+            });
+        </script>
+</body>
+
+</html>
