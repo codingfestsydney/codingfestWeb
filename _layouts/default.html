@@ -222,39 +222,8 @@
 </head>
 
 <body>
-    <div class="navc row">
-    <div class="col-2"></div>
-    <nav class="col navbar navbar-custom  navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="https://codingfestsydney.github.io/"> <img src='https://codingfestsydney.github.io/assets/files/festlogo.png'
-                class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://codingfestsydney.github.io/">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="https://htmlpreview.github.io/?https://github.com/codingfestsydney/codingfestsydney.github.io/blob/gh-pages/_layouts/call.html">Call
-                        for Paticipation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="https://htmlpreview.github.io/?https://github.com/codingfestsydney/codingfestsydney.github.io/blob/gh-pages/_layouts/program.html">Program</a>
-                </li>
-            </ul>
-        </div>
-        <a class="nav-brand">
-            <img src='https://codingfestsydney.github.io/assets/files/USydLogo.svg' class="logo">
-        </a>
-    </nav>
-    <div class="col-2"></div>
-</div>
+    {% include navigation.html %}
+    {{ content }}
     <div class="row upper1 align-items-center">
         <div class="mask">
             <div class=" col justify-content-center">
@@ -341,7 +310,7 @@
                 </tr>
                 <tr>
                     <td>
-                        Coding Fest 2021 Full <a href="https://htmlpreview.github.io/?https://github.com/codingfestsydney/codingfestsydney.github.io/blob/gh-pages/_layouts/program.html" class="intextlink">Program</a> is available. See you next Wed at Coding Fest 2021! 
+                        Coding Fest 2021 Full <a href="/program" class="intextlink">Program</a> is available. See you next Wed at Coding Fest 2021! 
                     </td>
                 </tr>
                 <tr>
@@ -352,7 +321,7 @@
                 <tr>
                     <td>
                         Coding Fest 2021 <a
-                            href="https://htmlpreview.github.io/?https://github.com/codingfestsydney/codingfestsydney.github.io/blob/gh-pages/_layouts/program.html"
+                            href="/program"
                             class="intextlink">Program</a> at a glance:<br>
 
                         <table style="font-size: smaller;" border="1">
