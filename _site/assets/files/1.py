@@ -1,0 +1,1 @@
+from svglib.svglib import svg2rlg
